@@ -1,0 +1,138 @@
+.carrossel__titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--cor-terciaria);
+    text-align: center;
+    
+    background-color: var(--cor-primaria);
+    padding: 2rem 0 0.8rem 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 1.2rem 0 1.6rem 0;
+}
+
+.card {
+    background-color: var(--cor-primaria);
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    margin: 2rem 2.4rem;
+    padding: 1.6rem;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.7rem;
+}
+
+.descricao__titulo {
+    color: var(--cor-terciaria);
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 0.9rem;
+}
+
+.descricao__titulo-livro {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--cor-quarteciaria);
+    margin-bottom: 0.8rem;
+}
+
+.descricao__texto {
+    font-size: 1.4rem;
+    color: #000000D9;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes__lista {
+    display: flex;
+    gap: 2.8rem;
+}
+
+.botoes__ancora {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 1.2rem 3.5rem;
+    margin-top: 3.5rem;
+}
+
+.card__estrelinhas {
+    margin-top: 0.7rem;
+    margin-bottom: 0.9rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .carrossel__titulo {
+        font-size: 2.6rem;
+
+        margin-bottom: 3.2rem;
+        padding: 5rem 0 1.6rem 0;
+    }
+
+    .swiper-pagination {
+        margin-bottom: 7.75rem;
+        margin-top: 0;
+    }
+
+    .swiper {
+        width: 75%;
+        
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 100%;
+    }
+
+    .card {
+        width: 76%;
+        margin: 6.15rem auto 4.8rem auto;
+    }
+
+    .descricao {
+        margin-right: 8.5rem;
+    }
+
+    .descricao__texto {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        display: flex;
+        margin: 0 10% 12.6rem 10%;
+        align-items: center;
+        gap: 8.4rem;
+    }
+
+    .card {
+        margin-top: 12.6rem;
+    }
+
+    .descricao__titulo {
+        font-size: 3.2rem;
+    }
+}

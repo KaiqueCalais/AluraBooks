@@ -1,0 +1,90 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
+
+    width: auto;
+    height: 21.5rem;
+}
+
+.banner__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 0 5.4rem 2.4rem 5.4rem;
+}
+
+.banner__titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.banner__texto {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.banner__pesquisa {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    padding: 1rem 2.4rem;
+    color: var(--cor-primaria);
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: var(--fonte-primaria);
+
+    border: 0.1rem solid var(--cor-primaria);
+    border-radius: 2.4rem;
+
+    width: 89%;
+    height: 4.4rem;
+}
+
+.banner__pesquisa::placeholder {
+    color: var(--cor-primaria);
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: var(--fonte-primaria);
+    padding: 0 6.6rem 0 8.7rem;
+
+    background-image: url(../imgs/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 5.1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        height: 37.5rem;
+    }
+
+    .banner__titulo {
+        font-size: 3.6rem;
+    }
+
+    .banner__pesquisa {
+        width: 50%;
+        height: 5.6rem;
+    }
+
+    .banner__pesquisa::placeholder {
+        font-size: 1.6rem;
+        padding-left: 13.35rem;
+        background-position: 10.15rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .banner__pesquisa {
+        width: 35%;
+    }
+
+    .banner__pesquisa::placeholder {
+        padding-left: 18.75rem;
+        background-position: 15.35rem;
+    }
+}
